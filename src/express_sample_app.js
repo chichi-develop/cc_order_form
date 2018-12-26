@@ -7,12 +7,12 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Button,
+  //Button,
   Container,
   Row,
   Col } from 'reactstrap';
 
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, } from 'react-router-dom';
 
 import EmployeeList from './employee/employee_list';
 import EmployeeDetail from './employee/employee_detail';
