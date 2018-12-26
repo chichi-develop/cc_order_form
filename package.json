@@ -1,0 +1,59 @@
+{
+  "name": "express-sample_app",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Express sample application.",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build:dev": "env-cmd config/env.dev.js react-scripts start",
+    "build:prod": "env-cmd config/env.prod.js react-scripts build",
+    "build": "npm run build:prod",
+    "server:dev": "env-cmd config/env.dev.js node-dev server.js",
+    "server:prod": "env-cmd config/env.prod.js node server.js",
+    "start": "npm run server:prod",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "dependencies": {
+    "@types/csv-parse": "^1.1.11",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.1.3",
+    "cookie-parser": "^1.4.3",
+    "create-react-app": "^1.5.2",
+    "csv-parse": "^4.0.1",
+    "debug": "~2.6.9",
+    "env-cmd": "^8.0.2",
+    "express": "^4.16.4",
+    "method-override": "^2.3.10",
+    "morgan": "~1.9.0",
+    "pg": "^7.4.1",
+    "prop-types": "^15.6.2",
+    "pug": "^2.0.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^2.0.4",
+    "reactstrap": "^6.4.0",
+    "sequelize": "^4.33.4",
+    "sequelize-cli": "^4.0.0",
+    "serve-favicon": "^2.4.5",
+    "yarn": "^1.12.3"
+  },
+  "devDependencies": {
+    "node-dev": "^3.1.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "sqlite3": "^4.0.2"
+  },
+  "engines": {
+    "node": "^10.8.0",
+    "npm": ">= 6.4.1 <7",
+    "yarn": ">= 1.9.4 <2"
+  },
+  "//": "react-scriptsにおいてHTTP HEADERのAcceptがtext/htmlであるリクエストをプロクシする先のサーバ",
+  "proxy": "http://localhost:3010",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
