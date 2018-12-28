@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  node:
+    build:
+      context: .
+#      args:
+#        - NODE_ENV=development
+    ports:
+      - "8080:3010"
+    tty: true
+    volumes:
+      - ./database:/app/database:delegated
+#    environment:
+#      - NODE_ENV=development
