@@ -9,7 +9,7 @@
   - express
   - sequelize
 - Client
-  - react
+  - React
 
 ## インストール、実行
 
