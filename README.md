@@ -24,3 +24,7 @@ $ docker-compose up -d --build
 => chromeで開く（Firefoxだと崩れます（対応中）
    http://localhost:8080/
 ```
+
+## BackLog
+
+- dev、prodでdatabaseファイルの場所を分ける
