@@ -16,7 +16,7 @@
 ```txt
 $ git clone https://github.com/chichi-develop/cc_order_form.git
 
-$ cd cd cc_order_form
+$ cd cc_order_form
 
 $ docker-compose up -d --build
 ※Warningがいくつか出ます（対応中）
